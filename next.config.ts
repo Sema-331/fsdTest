@@ -1,7 +1,9 @@
-import type { NextConfig } from "next";
+// import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {
-  /* config options here */
+const nextConfig = {
+  output: "export",
+  assetPrefix: "./",
+  basePath: "/repository-name", // Укажите имя репозитория
 };
 
-export default nextConfig;
+module.exports = nextConfig;
